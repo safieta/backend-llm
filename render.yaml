@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: backend-llm
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        value: "AIzaSyAcGe0PgT4xL_4I5YMqsvU2etbCac1AD2c"
